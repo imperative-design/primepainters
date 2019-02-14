@@ -20,6 +20,9 @@
 
 // ** MySQL settings ** //
 $mode = 'live';
+define( 'WP_HOME', 'http://primepainters.test' );
+define( 'WP_SITEURL', 'http://primepainters.test' );
+
 if($mode == 'dev'){
 	define( 'DB_NAME', 'primepainters-test' );
 	define( 'DB_USER', 'wordpress' );
