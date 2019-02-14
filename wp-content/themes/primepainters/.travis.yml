@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+  - "10.15.0"
+cache:
+  npm: true
+  yarn : true
+  directories:
+    - ~/.npm
+    - ~/.cache
+    - node_modules
+    - /home/travis/.cache/Cypress
+before_install:
+  - npm i -g npm@6.4.1
+install:
+  - yarn
+script:
+  - npm test
+  - kill $(jobs -p) || true
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: $HEROKU_TOKEN

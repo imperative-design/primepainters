@@ -1,0 +1,13 @@
+
+{
+    "extends": "tslint:recommended",
+    "rules": {
+      "semicolon": [false, "never"],
+      "quotemark": [false, "single"],
+      "no-trailing-whitespace": [false],
+      "label-position": [false],
+      "no-unused-expression": [false],
+      "eofline": false,
+      "no-console": false
+    }
+  }

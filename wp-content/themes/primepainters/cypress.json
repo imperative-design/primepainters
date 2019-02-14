@@ -1,0 +1,5 @@
+{
+    "supportFile": "cypress/support/index.js",
+    "watchForFileChanges": false,
+    "ignoreTestFiles": ["*/**/x.*.spec.js", "**/**/*.spec.ts", "*/**/x.js.map"]
+}
