@@ -19,7 +19,7 @@
  */
 
 // ** MySQL settings ** //
-$mode = 'dev';
+$mode = 'live';
 if($mode == 'dev'){
 	define( 'DB_NAME', 'primepainters-test' );
 	define( 'DB_USER', 'wordpress' );

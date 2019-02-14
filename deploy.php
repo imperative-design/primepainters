@@ -26,3 +26,11 @@ task('deploy', [
 
 after('deploy', 'success');
 
+
+/**
+ * Installing Node on Bluehost
+ * wget -qO- https://cdn.rawgit.com/creationix/nvm/master/install.sh | bash
+ * source ~/.bash_profile
+ * nvm install stable
+ * 
+ */
