@@ -112,53 +112,64 @@ p
 
             .nav
                 display: flex;
-                align-items: center;
-                transition: height 350ms ease-in-out;
                 margin: 0 3% 0 0;
-                // overflow: hidden;
-                &.active
-                    display: block;
-                li
-                    font-family: 'Open Sans', sans-serif;
-                    margin: 10px 5px 0 0;
-                    font-weight: 400;
-                    position: relative;
-                    a
-                        color: $secondary;
-                        transition: all 150ms ease-in-out;
-                        transform: scale(1);
+                .contact-us
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding-top: 9px;
+                    box-sizing: border-box;
+                    text-transform: capitalize;
+                    .phone
+                        color: #eee;
+                        font-weight: bold;
                         display: block;
-                        text-transform: capitalize;
-                        padding: 1.2vh 2vh;
-                    a:hover, a.active
-                        color: #fff;
-                        background: $secondary;
-                    &.menu-item-has-children
-                        &:hover
-                            .sub-menu
-                                display: block;
-                    .sub-menu
-                        position: absolute;
-                        background: #fff;
-                        width: 100%;
-                        display: none;
-                        min-width: 200px;
-                        text-align: center;
-                        left: -55px;
-                        li
-                            margin: 0;
-                            padding: 0;
-                            &:fist-child
+                        background: map-get($testimonialcolormap, 'two');
+                        padding: 7px;
+                        border-radius: 5px;
+                ul
+                    display: flex;
+                    align-items: center;
+                    transition: height 350ms ease-in-out;
+                    
+                    // overflow: hidden;
+                    &.active
+                        display: block;
+                    li
+                        font-family: 'Open Sans', sans-serif;
+                        margin: 10px 5px 0 0;
+                        font-weight: 400;
+                        position: relative;
+                        a
+                            color: $secondary;
+                            transition: all 150ms ease-in-out;
+                            transform: scale(1);
+                            display: block;
+                            text-transform: capitalize;
+                            padding: 1.2vh 2vh;
+                        a:hover, a.active
+                            color: #fff;
+                            background: $secondary;
+                        &.menu-item-has-children
+                            &:hover
+                                .sub-menu
+                                    display: block;
+                        .sub-menu
+                            position: absolute;
+                            background: #fff;
+                            width: 100%;
+                            display: none;
+                            min-width: 200px;
+                            text-align: center;
+                            left: -55px;
+                            li
+                                margin: 0;
+                                padding: 0;
+                                &:fist-child
+                                    a
+                                        padding-top: 25px;
                                 a
-                                    padding-top: 25px;
-                            a
-                                padding: 15px;
-
-            .phone
-                position: absolute;
-                right: 15px;
-                color: #eee;
-                font-weight: bold; 
+                                    padding: 15px;
     .nav-toggle
         display: none;
         color: #fff;
@@ -792,6 +803,7 @@ footer
     bottom: 0;
     left: 0;
     width: 100%;
+    z-index: 100;
 
     & > div
         display: flex;
@@ -804,5 +816,10 @@ footer
             font-size: 1.8vh;
     .nav-toggle
         display: none;
+    .contact-us
+        i
+            margin: 0 5px 0 0;
+        a
+            color: #fff;
 
 @import 'sass/mediaqueries';

@@ -39,17 +39,18 @@
 					<span class="tagline">quality at a reasonable price</span>
 				</h1>
 			</a>
-			<?php wp_nav_menu(array(
-				'menu' => 'primary',
-				'menu_class' => 'nav',
-				'container' => ''
-			)); ?>
-			<!-- <ul class="nav">
-				<li><a href="/about">about us</a></li>
-				<li><a href="/services">services</a></li>
-				<li><a href="/our_work">our work</a></li>
-				<li><a href="/contact">contact us</a></li>
-			</ul> -->
+			
+			<div class="nav">
+				<?php wp_nav_menu(array(
+					'menu' => 'primary',
+					'menu_class' => '',
+					'container' => '',
+				)); ?>
+				<div class="contact-us">
+					<a href="tel:7708271115" class="phone">request a quote</a>
+				</div>
+			</div>
+			
 			<a class="nav-toggle"><i class="fa fa-bars"></i></a>
 			</div>
 		</header>
