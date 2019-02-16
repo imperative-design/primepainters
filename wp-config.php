@@ -18,21 +18,26 @@
  * @package WordPress
  */
 
-// ** MySQL settings ** //
-$mode = 'live';
-define( 'WP_HOME', 'http://primepainters.test' );
-define( 'WP_SITEURL', 'http://primepainters.test' );
+$env = getenv('environment');
+// $env = 'production'; //turn on to force local remote connection
+$useRemote 	= getenv('USE_REMOTE'); 
 
-if($mode == 'dev'){
-	define( 'DB_NAME', 'primepainters-test' );
-	define( 'DB_USER', 'wordpress' );
-	define( 'DB_PASSWORD', 'password' );
-	define( 'DB_HOST', 'mysql' );
+// ** MySQL settings ** //
+if($env == 'dev' && ! $useRemote){
+	define('DB_HOST', 		getenv('PP_LOCAL_DB_HOST'));
+	define('DB_NAME', 		getenv('PP_LOCAL_DB_NAME'));
+	define('DB_USER', 		getenv('PP_LOCAL_DB_USER'));
+	define('DB_PASSWORD',	getenv('PP_LOCAL_DB_PW'));
 } else {
-	define('DB_HOST', '162.241.253.84');
-	define('DB_NAME', 'primepa6_WPGDH');
-	define('DB_USER', 'primepa6_WPGDH');
-	define('DB_PASSWORD', 'HEBR2PtpNvmQr68kN');
+	//Forces local dev but with a remote db
+	if($useRemote === 'true'){
+		define( 'WP_HOME', 'http://primepainters.test');
+		define( 'WP_SITEURL', 'http://primepainters.test');
+	}
+	define('DB_HOST', getenv('PP_PROD_DB_HOST'));
+	define('DB_NAME', getenv('PP_PROD_DB_NAME'));
+	define('DB_USER', getenv('PP_PROD_DB_USER'));
+	define('DB_PASSWORD', getenv('PP_PROD_DB_PW'));
 }
 
 /** Database Charset to use in creating database tables. */
