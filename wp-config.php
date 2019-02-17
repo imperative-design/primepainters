@@ -33,11 +33,18 @@ if($env == 'dev' && ! $useRemote){
 	if($useRemote === 'true'){
 		define( 'WP_HOME', 'http://primepainters.test');
 		define( 'WP_SITEURL', 'http://primepainters.test');
+	} else {
+		define( 'WP_HOME', 'http://primepaintersatlanta.com');
+		define( 'WP_SITEURL', 'http://primepaintersatlanta.com/current');
 	}
-	define('DB_HOST', getenv('PP_PROD_DB_HOST'));
-	define('DB_NAME', getenv('PP_PROD_DB_NAME'));
-	define('DB_USER', getenv('PP_PROD_DB_USER'));
-	define('DB_PASSWORD', getenv('PP_PROD_DB_PW'));
+	define('DB_HOST', '162.241.253.84');
+	define('DB_NAME', 'primepa6_WPGDH');
+	define('DB_USER', 'primepa6_WPGDH');
+	define('DB_PASSWORD', 'HEBR2PtpNvmQr68kN');
+	// define('DB_HOST', getenv('PP_PROD_DB_HOST'));
+	// define('DB_NAME', getenv('PP_PROD_DB_NAME'));
+	// define('DB_USER', getenv('PP_PROD_DB_USER'));
+	// define('DB_PASSWORD', getenv('PP_PROD_DB_PW'));
 }
 
 /** Database Charset to use in creating database tables. */
