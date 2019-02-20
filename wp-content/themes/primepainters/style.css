@@ -1187,6 +1187,10 @@ p {
   margin: 0 2vw 0 0;
 }
 
+.posts .post .post-content {
+  flex-grow: 1;
+}
+
 .gallery footer {
   display: none;
 }

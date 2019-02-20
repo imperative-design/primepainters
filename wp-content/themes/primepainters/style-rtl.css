@@ -1180,10 +1180,15 @@ p {
 }
 
 .posts .post .featured-img {
-  flex-shrink: 0;
   width: 250px;
+  height: 250px;
+  flex-shrink: 0;
   background: #333;
   margin: 0 0 0 2vw;
+}
+
+.posts .post .post-content {
+  flex-grow: 1;
 }
 
 .gallery footer {

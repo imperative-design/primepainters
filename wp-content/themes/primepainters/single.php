@@ -15,6 +15,11 @@ get_header(); ?>
 <div class="content-wrapper">
 	<?php while ( have_posts() ) : the_post(); ?>
 		<div class="single-post">
+			<div class="post-header">
+				<?php if ( has_post_thumbnail() ) {
+					the_post_thumbnail('featured-rect');
+				} ?>
+			</div>
 			<h1 class="single-post-title"><?php the_title(); ?></h1>
 			<div class="single-post-content">
 				<?php the_content(); ?>
