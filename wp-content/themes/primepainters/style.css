@@ -1161,6 +1161,32 @@ p {
   margin: 0 0;
 }
 
+.posts .post {
+  margin: 0 0 3vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.posts .post .post-title {
+  color: #333;
+}
+
+.posts .post .post-title:hover {
+  color: #c13032;
+}
+
+.posts .post .post-title h1 {
+  margin: 0 0 7px;
+}
+
+.posts .post .featured-img {
+  width: 250px;
+  height: 250px;
+  flex-shrink: 0;
+  background: #333;
+  margin: 0 2vw 0 0;
+}
+
 .gallery footer {
   display: none;
 }

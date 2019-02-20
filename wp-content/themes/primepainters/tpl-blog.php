@@ -16,10 +16,12 @@ get_header();
             $query = new WP_Query($queryArgs);
             if($query->have_posts() ) : while ($query->have_posts()) : $query->the_post(); ?>
             <div class="post">
-                <a href="<?php the_permalink(); ?>">
-                    <h1><?php the_title(); ?></h1>
-                </a>
+                <div class="featured-img"></div>
                 <div class="post-content">
+                    <a class="post-title" href="<?php the_permalink(); ?>">
+                        <h1><?php the_title(); ?></h1>
+                    </a>
+                
                     <?php the_content(); ?>
                 </div>
             </div>

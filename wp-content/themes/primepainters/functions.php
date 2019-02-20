@@ -391,7 +391,8 @@ function setupTheme() {
 	//Sizes are: "thumbnail", "medium", "large" and "full" ( full being the cropped default size we said )
 	add_image_size( 'banner-full-lanscape', 655, 9999, false);
 	add_image_size( 'banner-full-square', 655, 9999, false);
-	add_image_size( 'featured-square', 180, 999, false);
+	add_image_size( 'featured-rect', 180, 999, false);
+	add_image_size( 'featured-square', 250, 250, false);
 }
 
 function custom_excerpt_length( $length ) {
