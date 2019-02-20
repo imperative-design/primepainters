@@ -31,6 +31,7 @@ if($env == 'dev' && ! $useRemote){
 } else {
 	//Forces local dev but with a remote db
 	if($useRemote === 'true'){
+		// die('using remote');
 		define( 'WP_HOME', 'http://primepainters.test');
 		define( 'WP_SITEURL', 'http://primepainters.test');
 	} else {

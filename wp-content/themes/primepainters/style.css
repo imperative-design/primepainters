@@ -1094,7 +1094,7 @@ p {
   background-position: 0px -40px;
 }
 
-.page-template-default .banner, .page-template-tpl-blog .banner, .single .banner {
+.page-template-default .banner, .page-template-tpl-blog .banner, .single .banner, .category .banner {
   margin: 157px 0 7vh 0;
   position: relative;
   overflow: hidden;
@@ -1105,47 +1105,47 @@ p {
   background-repeat: no-repeat;
 }
 
-.page-template-default .banner img, .page-template-tpl-blog .banner img, .single .banner img {
+.page-template-default .banner img, .page-template-tpl-blog .banner img, .single .banner img, .category .banner img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
 }
 
-.page-template-default.about .banner, .page-template-tpl-blog.about .banner, .single.about .banner {
+.page-template-default.about .banner, .page-template-tpl-blog.about .banner, .single.about .banner, .category.about .banner {
   background: transparent url("http://primepaintersatlanta.com/wp-content/themes/primepainters/img/raws/hero/639822898.jpg") 0 -75%;
   background-size: 100%;
   height: 300px;
 }
 
-.page-template-default.services .banner, .page-template-default.contact-us .banner, .page-template-tpl-blog.services .banner, .page-template-tpl-blog.contact-us .banner, .single.services .banner, .single.contact-us .banner {
+.page-template-default.services .banner, .page-template-default.contact-us .banner, .page-template-tpl-blog.services .banner, .page-template-tpl-blog.contact-us .banner, .single.services .banner, .single.contact-us .banner, .category.services .banner, .category.contact-us .banner {
   background: transparent url(http://primepaintersatlanta.com/wp-content/themes/primepainters/img/banners/502263344.jpg) center 80%;
   height: 300px;
   background-size: 100%;
   background-repeat: no-repeat;
 }
 
-.page-template-default.exterior-painting .banner, .page-template-tpl-blog.exterior-painting .banner, .single.exterior-painting .banner {
+.page-template-default.exterior-painting .banner, .page-template-tpl-blog.exterior-painting .banner, .single.exterior-painting .banner, .category.exterior-painting .banner {
   background: transparent url(http://primepaintersatlanta.com/wp-content/themes/primepainters/img/hero/865036320.jpg) 0 10% no-repeat;
   background-size: 100%;
 }
 
-.page-template-default.interior-painting .banner, .page-template-tpl-blog.interior-painting .banner, .single.interior-painting .banner {
+.page-template-default.interior-painting .banner, .page-template-tpl-blog.interior-painting .banner, .single.interior-painting .banner, .category.interior-painting .banner {
   background: transparent url(http://primepaintersatlanta.com/wp-content/themes/primepainters/img/banners/905537070.jpg) 0 60% no-repeat;
   background-size: 100%;
 }
 
-.page-template-default.deck-fence-staining .banner, .page-template-tpl-blog.deck-fence-staining .banner, .single.deck-fence-staining .banner {
+.page-template-default.deck-fence-staining .banner, .page-template-tpl-blog.deck-fence-staining .banner, .single.deck-fence-staining .banner, .category.deck-fence-staining .banner {
   background: transparent url(http://primepaintersatlanta.com/wp-content/themes/primepainters/img/raws/hero/186223431.jpg) 0 60% no-repeat;
   background-size: 100%;
 }
 
-.page-template-default.pressure-washing .banner, .page-template-tpl-blog.pressure-washing .banner, .single.pressure-washing .banner {
+.page-template-default.pressure-washing .banner, .page-template-tpl-blog.pressure-washing .banner, .single.pressure-washing .banner, .category.pressure-washing .banner {
   background: transparent url(http://primepaintersatlanta.com/wp-content/themes/primepainters/img/banners/1094145182.jpg) 0 80% no-repeat;
   background-size: 100%;
 }
 
-.page-template-default .content-wrapper, .page-template-tpl-blog .content-wrapper, .single .content-wrapper {
+.page-template-default .content-wrapper, .page-template-tpl-blog .content-wrapper, .single .content-wrapper, .category .content-wrapper {
   display: flex;
   margin: 0 auto 150px;
   flex-direction: column;
@@ -1153,11 +1153,11 @@ p {
   line-height: 1.7;
 }
 
-.page-template-default .content-wrapper h1, .page-template-tpl-blog .content-wrapper h1, .single .content-wrapper h1 {
+.page-template-default .content-wrapper h1, .page-template-tpl-blog .content-wrapper h1, .single .content-wrapper h1, .category .content-wrapper h1 {
   font-size: 3.5vh;
 }
 
-.page-template-default .content-wrapper h2, .page-template-tpl-blog .content-wrapper h2, .single .content-wrapper h2 {
+.page-template-default .content-wrapper h2, .page-template-tpl-blog .content-wrapper h2, .single .content-wrapper h2, .category .content-wrapper h2 {
   margin: 0 0;
 }
 
@@ -1191,6 +1191,30 @@ p {
   flex-grow: 1;
 }
 
+.single-post .single-post-title .in {
+  font-weight: 100;
+}
+
+.single-post .single-post-title .in::before {
+  content: " \ ";
+}
+
+.single-post .single-post-title > a {
+  color: #c13032;
+  font-weight: 100;
+  text-transform: capitalize;
+}
+
+.single-post .single-post-title > a:hover {
+  cursor: pointer;
+}
+
+.single-post .single-post-title .in, .single-post .single-post-title > a {
+  font-size: 12pt;
+  display: inline-block;
+  margin-left: 5px;
+}
+
 .gallery footer {
   display: none;
 }
@@ -1214,6 +1238,14 @@ footer > div {
   display: flex;
 }
 
+footer > div.contact-us {
+  flex-direction: column;
+}
+
+footer > div.contact-us > div {
+  display: flex;
+}
+
 footer .nav {
   display: flex;
 }
@@ -1231,12 +1263,34 @@ footer .nav-toggle {
   display: none;
 }
 
+footer .contact-us > div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 footer .contact-us i {
   margin: 0 5px 0 0;
 }
 
 footer .contact-us a {
   color: #fff;
+}
+
+footer .contact-us .reccomend {
+  margin: 0 0 5px;
+  text-transform: capitalize;
+}
+
+footer .contact-us .reccomend a {
+  background: #3b7d2a;
+  display: inline-block;
+  margin-left: 5px;
+  padding: 7px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 550px) {
@@ -1272,6 +1326,14 @@ footer .contact-us a {
   }
   .touchevents footer > div:last-child {
     margin-bottom: 0;
+  }
+  .touchevents footer > div.contact-us > div {
+    display: block;
+    text-align: center;
+  }
+  .touchevents footer > div.contact-us > div.reccomend a {
+    display: block;
+    margin: 10px 0 5px;
   }
   .touchevents .header-wrapper {
     max-height: initial;

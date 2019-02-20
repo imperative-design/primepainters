@@ -389,10 +389,10 @@ function setupTheme() {
 	set_post_thumbnail_size( 655, 0, false );						//Sets the default size
 	//Set a $size var equal to default WP sizes for these in your themes
 	//Sizes are: "thumbnail", "medium", "large" and "full" ( full being the cropped default size we said )
-	add_image_size( 'banner-full-lanscape', 655, 9999, false);
-	add_image_size( 'banner-full-square', 655, 9999, false);
-	add_image_size( 'featured-rect', 180, 999, false);
-	add_image_size( 'featured-square', 250, 250, false);
+	add_image_size( 'banner-full-lanscape', 9999, 655, true);
+	add_image_size( 'banner-full-square', 750, 750, true);
+	add_image_size( 'featured-rect', 9999, 250, true);
+	add_image_size( 'featured-square', 250, 250, true);
 }
 
 function custom_excerpt_length( $length ) {

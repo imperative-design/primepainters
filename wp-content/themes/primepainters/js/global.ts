@@ -36,7 +36,7 @@ function init() {
 }
 
 function attachPhoneNumber(number:string){
-    $('footer').find('.contact-us a').html(number);
+    $('footer .contact-us div').eq(1).find('a').html(number);
 }
 
 function bindEvents() {

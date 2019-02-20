@@ -734,7 +734,7 @@ p
         background-position: 0px -40px;
 
 
-.page-template-default, .page-template-tpl-blog, .single
+.page-template-default, .page-template-tpl-blog, .single, .category
     .banner
         margin: 157px 0 7vh 0;
         position: relative;
@@ -787,6 +787,7 @@ p
         h2
             margin: 0 0
 
+//Blog
 .posts
     .post
         margin: 0 0 3vh;
@@ -808,6 +809,24 @@ p
         .post-content
             flex-grow: 1;
 
+//Single Post
+.single-post
+    .single-post-title
+        .in
+            font-weight: 100;
+            &::before
+                content: " \ ";
+        & > a
+            color: $secondary;
+            font-weight: 100;
+            text-transform: capitalize;
+            &:hover
+                cursor: pointer;
+        .in, & > a
+            font-size: 12pt;
+            display: inline-block;
+            margin-left: 5px;
+
 .gallery
     footer
         display: none;
@@ -828,6 +847,10 @@ footer
 
     & > div
         display: flex;
+        &.contact-us
+            flex-direction: column;
+            & > div
+                display: flex;
     .nav
         display: flex;
         li
@@ -838,9 +861,25 @@ footer
     .nav-toggle
         display: none;
     .contact-us
+        & > div
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
         i
             margin: 0 5px 0 0;
         a
             color: #fff;
+        .reccomend 
+            margin: 0 0 5px;
+            text-transform: capitalize;
+            a
+                background: map-get($testimonialcolormap, 'two');
+                display: inline-block;
+                margin-left: 5px;
+                padding: 7px;
+                box-sizing: border-box;
+                border-radius: 4px;
+                align-items: center;
+                justify-content: center;
 
 @import 'sass/mediaqueries';
