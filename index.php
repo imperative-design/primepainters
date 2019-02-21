@@ -5,7 +5,7 @@
  *
  * @package WordPress
  */
-
+die('this is code from the repo');
 /**
  * Tells WordPress to load the WordPress theme and output it.
  *
