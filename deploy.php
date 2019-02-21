@@ -38,10 +38,7 @@ after('deploy', 'node:install');
 after('deploy', 'success');
 
 
-task('pwd', function () {
-    $result = run('pwd');
-    writeln("Current dir: $result");
-});
+
 /**
  * Installing Node on Bluehost
  * wget -qO- https://cdn.rawgit.com/creationix/nvm/master/install.sh | bash
