@@ -14,10 +14,9 @@ host('162.241.253.84')
 ->set('git_tty', true);
 
 task('node:install', function(){
-    // run('wget -qO- https://cdn.rawgit.com/creationix/nvm/master/install.sh | bash');
-    // run('sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"');
-    // run('brew install node');
-    // run('yum install nodejs');
+    run('wget -qO- https://cdn.rawgit.com/creationix/nvm/master/install.sh | bash');
+    run('source ~/.bash_profile');
+    run('nvm install stable');
     run('cd public_html/current/wp-content/themes/primepainters');
     run('npm install');
 });

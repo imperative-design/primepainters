@@ -20,7 +20,10 @@
 
 $env = getenv('environment');
 // $env = 'production'; //turn on to force local remote connection
-$useRemote 	= getenv('USE_REMOTE'); 
+// $useRemote 	= getenv('USE_REMOTE'); 
+$useRemote = true;
+// die('env: '.$env);
+
 
 // ** MySQL settings ** //
 if($env == 'dev' && ! $useRemote){
@@ -30,7 +33,7 @@ if($env == 'dev' && ! $useRemote){
 	define('DB_PASSWORD',	getenv('PP_LOCAL_DB_PW'));
 } else {
 	//Forces local dev but with a remote db
-	if($useRemote === 'true'){
+	if($useRemote === true){
 		// die('using remote');
 		define( 'WP_HOME', 'http://primepainters.test');
 		define( 'WP_SITEURL', 'http://primepainters.test');

@@ -38,11 +38,12 @@ let config = {
   entry: {
     app:[
       `${path.resolve(__dirname)}/node_modules/jquery/dist/jquery`,
-      `${path.resolve(__dirname)}/js/global`,
+      `${path.resolve(__dirname)}/node_modules/fancybox/dist/js/jquery.fancybox`,
       `${path.resolve(__dirname)}/node_modules/slick-carousel/slick/slick.js`,
       `${path.resolve(__dirname)}/node_modules/jquery.scrollto/jquery.scrollTo`,
       `${path.resolve(__dirname)}/js/modernizr`,
       `${path.resolve(__dirname)}/js/gallery`,
+      `${path.resolve(__dirname)}/js/global`,
     ]
   },  //Point(s) to enter the application
 	output: {

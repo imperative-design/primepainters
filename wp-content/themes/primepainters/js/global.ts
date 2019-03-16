@@ -39,12 +39,13 @@ function attachPhoneNumber(number:string){
     $('footer .contact-us div').eq(1).find('a').html(number);
 }
 
+
 function bindEvents() {
     console.log('binding events')
     $('.hero .menu > li').on('click', animateServiceBoard);
 
     $('.nav-toggle').off('click');
-    $('.nav-toggle').on('click', toggleNav);
+    $('.nav .contact').fancybox();
 }
 
 function toggleNav(evt) {

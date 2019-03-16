@@ -77,9 +77,10 @@ p
             a.logo
                 display: flex;
                 align-items: center;
-                margin: 10px 0 25px 15px;
+                margin: 10px 0 25px 0px;
                 position: relative;
                 width: 385px;
+                justify-content: center;
                 span.border-top
                     border-top: 5px solid #000;
                     position: absolute;
@@ -88,7 +89,9 @@ p
                     top: 55px;
                     
                 & > img
-                    max-width: 105px;
+                    // max-width: 105px;
+                    max-width: 275px;
+                    width: 100%;
                 h1
                     font-family: 'Open Sans', sans-serif;
                     font-weight: bold;
@@ -120,7 +123,7 @@ p
                     padding-top: 9px;
                     box-sizing: border-box;
                     text-transform: capitalize;
-                    .phone
+                    .contact
                         color: #eee;
                         font-weight: bold;
                         display: block;
@@ -184,7 +187,7 @@ p
                         align-items: center;
                     .nav
                         justify-content: center;
-                    .phone
+                    .contact
                         right: 40%;
                         top: -10px;
     &.mobile.full-wrapper
