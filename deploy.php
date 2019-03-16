@@ -15,8 +15,8 @@ host('162.241.253.84')
 
 task('node:install', function(){
     // run('wget -qO- https://cdn.rawgit.com/creationix/nvm/master/install.sh | bash');
-    run('sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"');
-    run('brew install node');
+    // run('sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"');
+    // run('brew install node');
     // run('yum install nodejs');
     run('cd public_html/current/wp-content/themes/primepainters');
     run('npm install');
@@ -46,6 +46,6 @@ after('deploy', 'success');
  * wget -qO- https://cdn.rawgit.com/creationix/nvm/master/install.sh | bash
  * source ~/.bash_profile
  * nvm install stable
+ * cd public_html/current/wp-content/themes/primepainters
  * npm install
- * 
  */
