@@ -62,7 +62,7 @@
 					'container' => '',
 				)); ?>
 				<div class="contact-us">
-					<a href="tel:7708271115" class="phone">request a quote</a>
+					<a href="#pp-contact-form" class="contact">request a quote</a>
 				</div>
 			</div>
 			

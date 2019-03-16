@@ -203,9 +203,10 @@ p {
 .header-wrapper header .wrapper a.logo {
   display: flex;
   align-items: center;
-  margin: 10px 15px 25px 0;
+  margin: 10px 0px 25px 0;
   position: relative;
   width: 385px;
+  justify-content: center;
 }
 
 .header-wrapper header .wrapper a.logo span.border-top {
@@ -217,7 +218,8 @@ p {
 }
 
 .header-wrapper header .wrapper a.logo > img {
-  max-width: 105px;
+  max-width: 275px;
+  width: 100%;
 }
 
 .header-wrapper header .wrapper a.logo h1 {
@@ -1294,6 +1296,16 @@ footer .contact-us .reccomend a {
 }
 
 @media only screen and (max-width: 550px) {
+  .touchevents .posts .post {
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto 3vh;
+  }
+  .touchevents .posts .post .post-title h1 {
+    font-size: 6.5vw;
+    margin: 0 auto;
+  }
   .touchevents .page .banner {
     margin: 165px 0 25px 0;
     height: 185px;
@@ -1327,6 +1339,14 @@ footer .contact-us .reccomend a {
   .touchevents footer > div:last-child {
     margin-bottom: 0;
   }
+  .touchevents footer > div.contact-us > div {
+    display: block;
+    text-align: center;
+  }
+  .touchevents footer > div.contact-us > div.reccomend a {
+    display: block;
+    margin: 10px 0 5px;
+  }
   .touchevents .header-wrapper {
     max-height: initial;
     flex-direction: column;
@@ -1342,7 +1362,7 @@ footer .contact-us .reccomend a {
     display: block;
   }
   .touchevents .header-wrapper header .wrapper a.logo {
-    margin: 2.5vh auto 3vh;
+    margin: 2.5vh auto 0vh;
     width: 95%;
   }
   .touchevents .header-wrapper header .wrapper a.logo > img {
@@ -1408,6 +1428,13 @@ footer .contact-us .reccomend a {
   }
   .touchevents .home .testimonials .header {
     text-align: center;
+  }
+  .touchevents .page-template-tpl-blog .content-wrapper {
+    width: 98%;
+    margin-bottom: 15vh;
+  }
+  .touchevents .single .content-wrapper {
+    margin: 0 0 150px;
   }
   .page .hero .container .service-board .transition h2 {
     text-align: center;

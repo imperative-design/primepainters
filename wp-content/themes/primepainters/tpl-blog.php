@@ -16,11 +16,13 @@ get_header();
             $query = new WP_Query($queryArgs);
             if($query->have_posts() ) : while ($query->have_posts()) : $query->the_post(); ?>
             <div class="post">
-                <div class="featured-img">
-                    <?php if ( has_post_thumbnail() ) {
-                        the_post_thumbnail('featured-square');
-                    } ?>
-                </div>
+                <?php if ( has_post_thumbnail() ) { ?>
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="featured-img">
+                                <?php the_post_thumbnail('featured-square'); ?>
+                        </div>
+                    </a>
+                <?php } ?>
                 <div class="post-content">
                     <a class="post-title" href="<?php the_permalink(); ?>">
                         <h1><?php the_title(); ?></h1>
