@@ -10,7 +10,8 @@ host('162.241.253.84')
 ->set('http_user', 'primepa6')
 ->set('keep_releases', '2')
 ->set('deploy_path', '/home2/primepa6/public_html')
-->set('repository', 'https://github.com/imperative-design/primepainters.git');
+->set('repository', 'git@github.com:imperative-design/primepainters.git')
+->set('git_tty', true);
 
 task('node:install', function(){
     run('wget -qO- https://cdn.rawgit.com/creationix/nvm/master/install.sh | bash');
@@ -44,6 +45,6 @@ after('deploy', 'success');
  * wget -qO- https://cdn.rawgit.com/creationix/nvm/master/install.sh | bash
  * source ~/.bash_profile
  * nvm install stable
+ * cd public_html/current/wp-content/themes/primepainters
  * npm install
- * 
  */
