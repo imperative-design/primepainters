@@ -47,15 +47,21 @@
 		<header>
 			<div class="wrapper">
 			<a class="logo" href="http://<?php bloginfo('site_url') ?>">
-				<img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo.png">
+				<img src="<?php bloginfo('stylesheet_directory'); ?>/img/pp_logo.svg">
+<!--
 				<span class="border-top"></span>
 				<h1> 
 					prime<span> painters </span>
 					<span class="tagline">quality at a reasonable price</span>
 				</h1>
+-->
 			</a>
 			
 			<div class="nav">
+				<div class="number">
+					<i class="fa fa-phone" aria-hidden="true"></i>
+					<a href="tel:7708271115" class="phone"></a>
+				</div>
 				<?php wp_nav_menu(array(
 					'menu' => 'primary',
 					'menu_class' => '',

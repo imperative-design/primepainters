@@ -36,7 +36,7 @@ function init() {
 }
 
 function attachPhoneNumber(number:string){
-    $('footer .contact-us div').eq(1).find('a').html(number);
+    $('.nav .number .phone').html(number);
 }
 
 
@@ -45,6 +45,8 @@ function bindEvents() {
     $('.hero .menu > li').on('click', animateServiceBoard);
 
     $('.nav-toggle').off('click');
+    $('.nav-toggle').on('click', toggleNav);
+    
     $('.nav .contact').fancybox();
 }
 

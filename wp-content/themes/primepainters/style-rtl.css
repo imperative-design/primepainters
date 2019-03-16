@@ -251,6 +251,21 @@ p {
 .header-wrapper header .wrapper .nav {
   display: flex;
   margin: 0 0 0 3%;
+  position: relative;
+}
+
+.header-wrapper header .wrapper .nav .number {
+  position: absolute;
+  left: 5px;
+  top: 1vh;
+}
+
+.header-wrapper header .wrapper .nav .number .fa {
+  margin: 0 0 0 5px;
+}
+
+.header-wrapper header .wrapper .nav .number a {
+  color: #333;
 }
 
 .header-wrapper header .wrapper .nav .contact-us {
@@ -262,7 +277,7 @@ p {
   text-transform: capitalize;
 }
 
-.header-wrapper header .wrapper .nav .contact-us .phone {
+.header-wrapper header .wrapper .nav .contact-us .contact {
   color: #eee;
   font-weight: bold;
   display: block;
@@ -351,7 +366,7 @@ p {
   justify-content: center;
 }
 
-.header-wrapper.rearrange > .container header .wrapper .phone {
+.header-wrapper.rearrange > .container header .wrapper .contact {
   left: 40%;
   top: -10px;
 }
@@ -1317,6 +1332,10 @@ footer .contact-us .reccomend a {
   .touchevents .page .header-wrapper header .wrapper .nav {
     overflow: hidden;
   }
+  .touchevents .page .header-wrapper header .wrapper .nav .number {
+    position: initial;
+    margin: 20px 0 10px;
+  }
   .touchevents .page .header-wrapper header .wrapper .nav ul {
     display: block;
   }
@@ -1386,7 +1405,7 @@ footer .contact-us .reccomend a {
     margin: 0;
   }
   .touchevents .header-wrapper header .wrapper .nav.active {
-    height: 380px;
+    height: 395px;
   }
   .touchevents .header-wrapper header .wrapper .nav li {
     margin: 0;

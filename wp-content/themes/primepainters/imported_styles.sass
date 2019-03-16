@@ -116,6 +116,15 @@ p
             .nav
                 display: flex;
                 margin: 0 3% 0 0;
+                position: relative;
+                .number
+                    position: absolute;
+                    right: 5px;
+                    top: 1vh;
+                    .fa
+                        margin: 0 5px 0 0;
+                    a
+                        color: #333;
                 .contact-us
                     display: flex;
                     justify-content: center;
@@ -884,5 +893,7 @@ footer
                 border-radius: 4px;
                 align-items: center;
                 justify-content: center;
-
+#pp-contact-form
+    display: none;
+    
 @import 'sass/mediaqueries';

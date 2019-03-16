@@ -17,10 +17,7 @@
 			like our work?
 			<a href="https://nextdoor.com/pages/prime-painters-llc/recommend/" target="_blank"><i class="fa fa-home" aria-hidden="true"></i>reccomend us</a>
 		</div>
-		<div>
-			<i class="fa fa-phone" aria-hidden="true"></i>
-			<a href="tel:7708271115" class="phone"></a>
-		</div>
+		<div></div>
 	</div>
 </footer>
 

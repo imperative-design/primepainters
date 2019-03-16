@@ -251,6 +251,21 @@ p {
 .header-wrapper header .wrapper .nav {
   display: flex;
   margin: 0 3% 0 0;
+  position: relative;
+}
+
+.header-wrapper header .wrapper .nav .number {
+  position: absolute;
+  right: 5px;
+  top: 1vh;
+}
+
+.header-wrapper header .wrapper .nav .number .fa {
+  margin: 0 5px 0 0;
+}
+
+.header-wrapper header .wrapper .nav .number a {
+  color: #333;
 }
 
 .header-wrapper header .wrapper .nav .contact-us {
@@ -1295,6 +1310,10 @@ footer .contact-us .reccomend a {
   justify-content: center;
 }
 
+#pp-contact-form {
+  display: none;
+}
+
 @media only screen and (max-width: 550px) {
   .touchevents .posts .post {
     flex-direction: column;
@@ -1316,6 +1335,10 @@ footer .contact-us .reccomend a {
   }
   .touchevents .page .header-wrapper header .wrapper .nav {
     overflow: hidden;
+  }
+  .touchevents .page .header-wrapper header .wrapper .nav .number {
+    position: initial;
+    margin: 20px 0 10px;
   }
   .touchevents .page .header-wrapper header .wrapper .nav ul {
     display: block;
@@ -1386,7 +1409,7 @@ footer .contact-us .reccomend a {
     margin: 0;
   }
   .touchevents .header-wrapper header .wrapper .nav.active {
-    height: 380px;
+    height: 395px;
   }
   .touchevents .header-wrapper header .wrapper .nav li {
     margin: 0;
