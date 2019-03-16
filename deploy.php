@@ -13,10 +13,10 @@ host('162.241.253.84')
 ->set('repository', 'https://github.com/imperative-design/primepainters.git');
 
 task('node:install', function(){
-    // run('wget -qO- https://cdn.rawgit.com/creationix/nvm/master/install.sh | bash');
-    // run('source ~/.bash_profile');
-    // run('nvm install stable');
-    run('cd current/wp-content/themes/primepainters');
+    run('wget -qO- https://cdn.rawgit.com/creationix/nvm/master/install.sh | bash');
+    run('source ~/.bash_profile');
+    run('nvm install stable');
+    run('cd public_html/current/wp-content/themes/primepainters');
     run('npm install');
 });
 
