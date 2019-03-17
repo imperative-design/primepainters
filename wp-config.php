@@ -44,7 +44,7 @@ if($env == 'dev' && ! $useRemote){
 	define('DB_HOST', '162.241.253.84');
 	define('DB_NAME', 'primepa6_WPGDH');
 	define('DB_USER', 'primepa6_WPGDH');
-	define('DB_PASSWORD', 'HEBR2PtpNvmQr68kN');
+	define('DB_PASSWORD', 'w7LPcE2t3Qr@ff');
 	// define('DB_HOST', getenv('PP_PROD_DB_HOST'));
 	// define('DB_NAME', getenv('PP_PROD_DB_NAME'));
 	// define('DB_USER', getenv('PP_PROD_DB_USER'));

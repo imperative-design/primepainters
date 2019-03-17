@@ -10,7 +10,7 @@ host('162.241.253.84')
 ->set('http_user', 'primepa6')
 ->set('keep_releases', '2')
 ->set('deploy_path', '/home2/primepa6/public_html')
-->set('repository', 'git@github.com:imperative-design/primepainters.git')
+->set('repository', 'git@github.com:peb7268/primepainters.git')
 ->set('git_tty', true);
 
 task('node:install', function(){
