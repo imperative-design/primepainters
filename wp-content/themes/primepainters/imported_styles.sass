@@ -29,11 +29,13 @@ p
     margin: 0 0 1vh;
 
 .more-link
-    float: right;
     display: inline-block;
     background: #133e9d;
     color: #fff;
     padding: 5px 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 
 .bulleted
     list-style: disc;
@@ -827,9 +829,13 @@ p
             margin: 0 2vw 0 0;
         .post-content
             flex-grow: 1;
+            position: relative;
+            p
+                line-height: 1.4;
 
 //Single Post
-.single-post
+.content-wrapper .single-post
+    max-width: 750px;
     .single-post-title
         .in
             font-weight: 100;
@@ -845,6 +851,9 @@ p
             font-size: 12pt;
             display: inline-block;
             margin-left: 5px;
+    p
+        line-height: 1.7;
+        margin: 0 0 4vh 0;
 
 .gallery
     footer

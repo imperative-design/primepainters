@@ -1187,7 +1187,7 @@ p {
 }
 
 .posts .post {
-  margin: 0 0 3vh;
+  margin: 0 0 8vh;
   display: flex;
   justify-content: space-between;
 }
@@ -1216,28 +1216,41 @@ p {
   flex-grow: 1;
 }
 
-.single-post .single-post-title .in {
+.posts .post .post-content p {
+  line-height: 1.4;
+}
+
+.content-wrapper .single-post {
+  max-width: 750px;
+}
+
+.content-wrapper .single-post .single-post-title .in {
   font-weight: 100;
 }
 
-.single-post .single-post-title .in::before {
+.content-wrapper .single-post .single-post-title .in::before {
   content: " \ ";
 }
 
-.single-post .single-post-title > a {
+.content-wrapper .single-post .single-post-title > a {
   color: #c13032;
   font-weight: 100;
   text-transform: capitalize;
 }
 
-.single-post .single-post-title > a:hover {
+.content-wrapper .single-post .single-post-title > a:hover {
   cursor: pointer;
 }
 
-.single-post .single-post-title .in, .single-post .single-post-title > a {
+.content-wrapper .single-post .single-post-title .in, .content-wrapper .single-post .single-post-title > a {
   font-size: 12pt;
   display: inline-block;
   margin-right: 5px;
+}
+
+.content-wrapper .single-post p {
+  line-height: 1.7;
+  margin: 0 0 4vh 0;
 }
 
 .gallery footer {
