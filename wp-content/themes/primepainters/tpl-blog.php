@@ -28,7 +28,7 @@ get_header();
                         <h1><?php the_title(); ?></h1>
                     </a>
                 
-                    <?php the_content(); ?>
+                    <?php the_content('Read More', TRUE); ?>
                 </div>
             </div>
         <?php endwhile; endif; ?> 

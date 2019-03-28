@@ -3,11 +3,16 @@
 <div class="banner"></div>
 <div class="content-wrapper">
     <div class="posts">
-        <?php
+        <?php			
+	        $cat_name = str_replace('-', ' ', explode('/', $_SERVER['REQUEST_URI'])[1]);;
+	        $category_id = get_cat_ID($cat_name);
             $queryArgs = array(
-                'posts_per_page' => -1
+                'posts_per_page' => -1,
+				'cat' => $category_id
             ); 
             $query = new WP_Query($queryArgs);
+            
+            
             if($query->have_posts() ) : while ($query->have_posts()) : $query->the_post(); ?>
             <div class="post">
                 <div class="featured-img">
@@ -20,7 +25,7 @@
                         <h1><?php the_title(); ?></h1>
                     </a>
                 
-                    <?php the_content(); ?>
+                    <?php the_content('Read More', TRUE); ?>
                 </div>
             </div>
         <?php endwhile; endif; ?> 

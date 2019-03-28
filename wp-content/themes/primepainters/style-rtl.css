@@ -146,6 +146,14 @@ p {
   margin: 0 0 1vh;
 }
 
+.more-link {
+  float: left;
+  display: inline-block;
+  background: #133e9d;
+  color: #fff;
+  padding: 5px 20px;
+}
+
 .bulleted {
   list-style: disc;
   padding: 0 50px 0 0;
@@ -1193,7 +1201,7 @@ p {
 }
 
 .posts .post .post-title h1 {
-  margin: 0 0 7px;
+  margin: -8px 0 7px;
 }
 
 .posts .post .featured-img {
@@ -1308,6 +1316,10 @@ footer .contact-us .reccomend a {
   border-radius: 4px;
   align-items: center;
   justify-content: center;
+}
+
+#pp-contact-form {
+  display: none;
 }
 
 @media only screen and (max-width: 550px) {
