@@ -21,7 +21,7 @@
 $env = getenv('environment');
 // $env = 'production'; //turn on to force local remote connection
 // $useRemote 	= getenv('USE_REMOTE'); 
-$useRemote = true;
+$useRemote = false;
 // die('env: '.$env);
 
 

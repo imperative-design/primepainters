@@ -112,7 +112,7 @@ body, p, li, a, h1, h2, h3, h4 {
 
 body {
   background: #fff;
-  display: grid;
+  display: initial;
 }
 
 a {
@@ -1339,40 +1339,43 @@ footer .contact-us .reccomend a {
 }
 
 @media only screen and (max-width: 550px) {
+  .touchevents .header-wrapper {
+    max-width: 550px;
+  }
   .touchevents .posts .post {
     flex-direction: column;
     align-items: center;
     width: 70%;
-    margin: 0 auto 3vh;
+    margin: 0 auto 8vh;
   }
   .touchevents .posts .post .post-title h1 {
     font-size: 6.5vw;
-    margin: 0 auto;
+    margin: 3vh auto;
   }
   .touchevents .page .banner {
-    margin: 165px 0 25px 0;
+    margin: 115px 0 25px 0;
     height: 185px;
     margin-bottom: 3vh;
   }
   .touchevents .page.about .banner {
     background-position-y: -97px;
   }
-  .touchevents .page .header-wrapper header .wrapper .nav {
+  .touchevents .page .header-wrapper header .wrapper .nav, .touchevents .single-post .header-wrapper header .wrapper .nav {
     overflow: hidden;
   }
-  .touchevents .page .header-wrapper header .wrapper .nav .number {
+  .touchevents .page .header-wrapper header .wrapper .nav .number, .touchevents .single-post .header-wrapper header .wrapper .nav .number {
     position: initial;
     margin: 20px 0 10px;
   }
-  .touchevents .page .header-wrapper header .wrapper .nav ul {
+  .touchevents .page .header-wrapper header .wrapper .nav ul, .touchevents .single-post .header-wrapper header .wrapper .nav ul {
     display: block;
   }
-  .touchevents .page .header-wrapper header .wrapper .nav ul .sub-menu {
+  .touchevents .page .header-wrapper header .wrapper .nav ul .sub-menu, .touchevents .single-post .header-wrapper header .wrapper .nav ul .sub-menu {
     display: block;
     position: relative;
     left: initial;
   }
-  .touchevents .page .header-wrapper header .wrapper .nav ul .sub-menu li a {
+  .touchevents .page .header-wrapper header .wrapper .nav ul .sub-menu li a, .touchevents .single-post .header-wrapper header .wrapper .nav ul .sub-menu li a {
     padding: 1vh;
   }
   .touchevents footer {
@@ -1433,7 +1436,7 @@ footer .contact-us .reccomend a {
     margin: 0;
   }
   .touchevents .header-wrapper header .wrapper .nav.active {
-    height: 395px;
+    height: 425px;
   }
   .touchevents .header-wrapper header .wrapper .nav li {
     margin: 0;
@@ -1481,7 +1484,8 @@ footer .contact-us .reccomend a {
     margin-bottom: 15vh;
   }
   .touchevents .single .content-wrapper {
-    margin: 0 0 150px;
+    margin: 0 auto 150px;
+    width: 95%;
   }
   .page .hero .container .service-board .transition h2 {
     text-align: center;
@@ -1534,5 +1538,15 @@ footer .contact-us .reccomend a {
   }
   .text-section h4 {
     font-size: 2.5vh;
+  }
+  .more-link {
+    position: relative;
+    float: right;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .touchevents .header-wrapper {
+    max-width: 375px;
   }
 }
