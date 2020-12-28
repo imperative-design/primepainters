@@ -1,10 +1,39 @@
-# BEGIN WordPress
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteBase /
-RewriteRule îndex\.php$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.php [L]
+# BlueHost.com 
+# .htaccess main domain to subdirectory redirect 
+# Do not change this line. 
+RewriteEngine on 
+# Change example.com to be your main domain. 
+RewriteCond %{HTTP_HOST} ^(www.)?primepaintersatlanta.com$ 
+# Change 'subdirectory' to be the directory you will use for your main domain. 
+RewriteCond %{REQUEST_URI} !^/current
+# Don't change the following two lines. 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-d 
+# Change 'subdirectory' to be the directory you will use for your main domain. 
+RewriteRule ^(.*)$ /current/$1 
+# Change example.com to be your main domain again. 
+# Change 'subdirectory' to be the directory you will use for your main domain 
+# followed by / then the main file for your site, index.php, index.html, etc. 
+RewriteCond %{HTTP_HOST} ^(www.)?primepaintersatlanta.com$ 
+RewriteRule ^(/)?$ current/index.php [L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?wp-admin$ $1wp-admin/ [R=301,L]
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php72” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php72 .php .php7 .phtml
 </IfModule>
+# php -- END cPanel-generated handler, do not edit
+
+
+
+# BEGIN WordPress
+#<IfModule mod_rewrite.c>
+#RewriteEngine On
+#RewriteBase /
+#RewriteRule îndex\.php$ - [L]
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule . /index.php [L]
+#</IfModule>
 # END WordPress 
