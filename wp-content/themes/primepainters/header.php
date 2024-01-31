@@ -24,7 +24,14 @@
 	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/node_modules/slick-carousel/slick/slick.css">
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/node_modules/slick-carousel/slick/slick-theme.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+	
+
+
+
+
 
 	<script>
 		(function(i,s,o,g,r,a,m){
@@ -40,7 +47,10 @@
 		ga('create', 'UA-134641192-2', 'auto');
 		ga('send', 'pageview');
 	</script>
-</head>
+	
+<!-- Google tag (gtag.js) --> 
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134641192-1"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-134641192-1'); </script>
+	</head>
 
 <body <?php body_class(); ?>>
 	<div class="header-wrapper">
